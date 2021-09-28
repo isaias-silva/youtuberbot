@@ -15,6 +15,9 @@ function main() {
         case '1':
             view()
             break
+        case '2':
+
+        break
     }
 }
 

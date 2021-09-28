@@ -1,7 +1,8 @@
 
 const readline = require('readline-sync')
-const puppeteer = require('puppeteer')
-
+const puppeteer = require('puppeteer-extra')
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin())
 const view= function views() {
     const url = readline.question('link do video:');
     console.log('','| Ctrl + C para sair |')
