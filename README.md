@@ -7,4 +7,5 @@
 <h2>🤖funções🤖</h2>
 <ul>
 <li>view</li>
+<li>compartilhar</li>
 </ul>
