@@ -8,4 +8,5 @@
 <ul>
 <li>view</li>
 <li>compartilhar</li>
+<li>like(em teste)</li>
 </ul>
