@@ -22,7 +22,7 @@ const liker = function like() {
     async function acess() {
         //browser
 
-        const browser = await puppeteer.launch({});
+        const browser = await puppeteer.launch({headless:false});
         //pagina
         const page = await browser.newPage();
         //pagina vai para url
@@ -40,7 +40,7 @@ const liker = function like() {
 
         await page.goto(link)
 
-
+        await page.waitForTimeout(2000)
         await page.evaluate(() => {
             //document.querySelectorAll('')[58].click();
             const alvo = document.querySelector('.yt-simple-endpoint.style-scope.ytd-toggle-button-renderer')
@@ -52,8 +52,9 @@ const liker = function like() {
 
         await likenumb++;
         await console.log(`likes:${likenumb}`)
+        await page.waitForTimeout(5000)
         await browser.close()
-
+     
 
     }
 
