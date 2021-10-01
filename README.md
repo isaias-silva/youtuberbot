@@ -18,3 +18,20 @@
 <li>view</li>
 <li>like(em teste)</li>
 </ul>
+
+<hr>
+<h3>instruções</h3>
+<p>
+é necessário a criação de um JSON chamado cont.json que contenha uma Array com objetos,
+os objetos devem conter dois atributos o <b>mail</b> e <b>senha</b> 
+como no exemplo abaixo:
+<pre>
+[{"mail":"juanzitogameplay@gmail.com","senha":"ruanitojone$"}]
+
+
+</pre>
+
+
+
+
+</p>
