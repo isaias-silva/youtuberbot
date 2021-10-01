@@ -3,8 +3,10 @@ const puppeteer = require('puppeteer')
 
 const menu = require('./src/menu')
 const asciiart = require('./src/ascii')
-const view = require('./src/views')
 
+//funções 
+const view = require('./src/views')
+const like = require('./src/like')
 function main() {
 
     console.log(asciiart())
@@ -16,7 +18,7 @@ function main() {
             view()
             break
         case '2':
-
+            like()
         break
     }
 }

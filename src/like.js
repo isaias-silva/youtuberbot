@@ -9,7 +9,7 @@ const cont = require('./data/cont.json')
 puppeteer.use(StealthPlugin())
 
 
-function like() {
+const liker = function like() {
     let likenumb = 0;
     const link = readline.question('link do video:');
 
@@ -22,7 +22,7 @@ function like() {
     async function acess() {
         //browser
 
-        const browser = await puppeteer.launch({ headless: false });
+        const browser = await puppeteer.launch({});
         //pagina
         const page = await browser.newPage();
         //pagina vai para url
@@ -46,18 +46,18 @@ function like() {
             const alvo = document.querySelector('.yt-simple-endpoint.style-scope.ytd-toggle-button-renderer')
             if (alvo != undefined) {
                 alvo.click()
-                
+
             }
         });
-    
-       await likenumb++;
-       await console.log(`likes:${likenumb}`)
-       await browser.close()
+
+        await likenumb++;
+        await console.log(`likes:${likenumb}`)
+        await browser.close()
 
 
     }
 
-   
+
     const interval = setInterval(function () {
         if (likenumb < cont.length) {
             acess()
@@ -71,4 +71,4 @@ function like() {
 
 }
 
-like()
+module.exports = liker
