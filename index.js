@@ -6,7 +6,7 @@ const asciiart = require('./src/ascii')
 
 //funções 
 const view = require('./src/views')
-const like = require('./src/like')
+const reason = require('./src/reason')
 function main() {
 
     console.log(asciiart())
@@ -18,8 +18,13 @@ function main() {
             view()
             break
         case '2':
-            like()
+          reason.like()
         break
+        case '3':
+            reason.desliker()
+          break
+      
+   
     }
 }
 
