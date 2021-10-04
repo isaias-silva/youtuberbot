@@ -116,7 +116,7 @@ const desliker = function deslike() {
         });
 
         await likenumb++;
-        await console.log(`likes:${likenumb}`)
+        await console.log(`deslikes:${likenumb}`)
         await page.waitForTimeout(5000)
         await browser.close()
 

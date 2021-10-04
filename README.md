@@ -11,12 +11,11 @@
 
 <hr>
 
-
-<strong style="color:red"> EM DESENVOLVIMENTO</strong>
 <h2>🤖funções🤖</h2>
 <ul>
 <li>view</li>
 <li>like(em teste)</li>
+<li>deslike(em teste)</li>
 </ul>
 
 <hr>
