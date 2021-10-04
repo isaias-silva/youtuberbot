@@ -3,7 +3,7 @@ const menu=function(){
     
     [1] - views
     [2] - likes
-    [3] - likes
+    [3] - deslike
     [0] - Sair
     
     `
